@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 333px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.rating, .thank-you {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 0%, hsl(213, 19%, 18%), hsl(213, 19%, 9%));
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin-top: 0.45rem;
+}
+
+.rating p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5rem;
+    margin-top: -1.2rem;
+}
+
+.rating-num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.number:focus {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+
+button {
+    height: 2.85rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.thank-you {
+    align-items: center;
+    padding: 2.8rem 2.5rem;
+}
+
+.thank-you img {
+    height: 6.8rem;
+    width: 10rem;
+    margin-bottom: 1.3rem;
+}
+
+.thank-you h1 {
+    color: white;
+}
+
+.you-rate {
+    height: 2rem;
+    padding: 0.5rem 1.25rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.thank-you-note {
+    text-align: center;
+    line-height: 1.55rem;
+    color: hsl(217, 12%, 63%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        width: 20.5rem;
+        height: 22.5rem;
+    }
+
+    .rating {
+        padding: 1.5rem 1.4rem 2rem;
+    }
+
+    .star {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+        
+    .rating h1 {
+        font-size: 1.5rem;
+        margin-top: -0.6rem;
+    }
+
+    .rating p {
+        color: hsl(217, 12%, 63%);
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .number {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .thank-you {
+        padding: 2.2rem 1.5rem;
+    }
+
+    .thank-you img {
+        height: 6rem;
+        width: 8.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .you-rate {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .thank-you h1 {
+        font-size: 1.5rem;
+    }
+
+    .thank-you-note {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}
